@@ -11,8 +11,8 @@ graph
 		label	"1"
 		graphics
 		[
-			x	75.44363343776166
-			y	509.70981593336876
+			x	1100.0
+			y	0.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -34,8 +34,8 @@ graph
 		label	"2"
 		graphics
 		[
-			x	30.0
-			y	453.91019478133273
+			x	650.0
+			y	0.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -57,8 +57,8 @@ graph
 		label	"3"
 		graphics
 		[
-			x	137.40372728748204
-			y	441.1622862574219
+			x	650.0
+			y	150.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -80,8 +80,8 @@ graph
 		label	"4"
 		graphics
 		[
-			x	141.11108415658876
-			y	185.52010103735842
+			x	650.0
+			y	875.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -103,8 +103,8 @@ graph
 		label	"5"
 		graphics
 		[
-			x	61.03289625133684
-			y	125.07794181473335
+			x	325.0
+			y	1025.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -126,8 +126,8 @@ graph
 		label	"6"
 		graphics
 		[
-			x	74.18777651079637
-			y	44.16486708032903
+			x	325.0
+			y	650.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -149,8 +149,8 @@ graph
 		label	"7"
 		graphics
 		[
-			x	71.17133694055093
-			y	-162.0
+			x	325.0
+			y	500.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -172,8 +172,8 @@ graph
 		label	"8"
 		graphics
 		[
-			x	37.004826469244364
-			y	369.0526562838638
+			x	350.0
+			y	0.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -195,8 +195,8 @@ graph
 		label	"9"
 		graphics
 		[
-			x	152.8022107857084
-			y	358.29512690443323
+			x	350.0
+			y	150.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -218,8 +218,8 @@ graph
 		label	"10"
 		graphics
 		[
-			x	515.5831465330737
-			y	-143.9374521548318
+			x	325.0
+			y	350.0
 			w	30.0
 			h	30.0
 			type	"ellipse"
@@ -245,32 +245,44 @@ graph
 			fill	"#000000"
 			targetArrow	"standard"
 		]
+		edgeAnchor
+		[
+			xSource	-1.0
+			xTarget	1.0
+		]
 		LabelGraphics
 		[
 			text	"[c] There is active network connection and user is logged in"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	715.58203125
+			y	2.0
 		]
 	]
 	edge
 	[
 		source	1
 		target	2
-		label	"[s] emailUser Click compose button"
+		label	"[s] emailUser clicks the compose button"
 		graphics
 		[
 			fill	"#000000"
 			targetArrow	"standard"
 		]
+		edgeAnchor
+		[
+			ySource	1.0
+			yTarget	-1.0
+		]
 		LabelGraphics
 		[
-			text	"[s] emailUser Click compose button"
+			text	"[s] emailUser clicks the compose button"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	652.0
+			y	65.6494140625
 		]
 	]
 	edge
@@ -283,13 +295,19 @@ graph
 			fill	"#000000"
 			targetArrow	"standard"
 		]
+		edgeAnchor
+		[
+			ySource	1.0
+			yTarget	-1.0
+		]
 		LabelGraphics
 		[
 			text	"[e] system presents a form with recipient, subject and text field and send and discard button"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	652.0
+			y	207.92744140625
 		]
 	]
 	edge
@@ -301,291 +319,243 @@ graph
 		[
 			fill	"#000000"
 			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	650.0
+					y	875.0
+				]
+				point
+				[
+					x	647.2222222222222
+					y	275.0
+				]
+				point
+				[
+					x	0.0
+					y	275.0
+				]
+				point
+				[
+					x	0.0
+					y	1025.0
+				]
+				point
+				[
+					x	325.0
+					y	1025.0
+				]
+			]
 		]
 		edgeAnchor
 		[
-			xSource	9.473903143468002E-16
-			ySource	0.41762647906668066
-			yTarget	0.4176264790666797
+			xSource	-0.18518518518518856
+			ySource	-0.98125
+			xTarget	-1.0
 		]
 		LabelGraphics
 		[
 			text	"[s] emailUser fills out the fields and click on the send button"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	2.0
+			y	276.0
 		]
 	]
 	edge
 	[
 		source	4
 		target	5
-		label	"[e] system display a successful message"
+		label	"[e] system informs that message was sent successfully"
 		graphics
 		[
 			fill	"#000000"
 			targetArrow	"standard"
 		]
+		edgeAnchor
+		[
+			ySource	-1.0
+			yTarget	1.0
+		]
 		LabelGraphics
 		[
-			text	"[e] system display a successful message"
+			text	"[e] system informs that message was sent successfully"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	27.560546875
+			y	713.381103515625
 		]
 	]
 	edge
 	[
 		source	5
 		target	6
-		label	"[c] successfully message"
+		label	"[c] message is not held in the draft folder"
 		graphics
 		[
 			fill	"#000000"
 			targetArrow	"standard"
 		]
+		edgeAnchor
+		[
+			ySource	-1.0
+			yTarget	1.0
+		]
 		LabelGraphics
 		[
-			text	"[c] successfully message"
+			text	"[c] message is not held in the draft folder"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	102.8828125
+			y	565.6494140625
 		]
 	]
 	edge
 	[
 		source	1
 		target	7
-		label	"[s] emailUser Click on draft button"
+		label	"[s] emailUser click on draft button"
 		graphics
 		[
 			fill	"#000000"
 			targetArrow	"standard"
 		]
+		edgeAnchor
+		[
+			xSource	-1.0
+			xTarget	1.0
+		]
 		LabelGraphics
 		[
-			text	"[s] emailUser Click on draft button"
+			text	"[s] emailUser click on draft button"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	409.2978515625
+			y	2.0
 		]
 	]
 	edge
 	[
 		source	7
 		target	8
-		label	"[e] system present a list of auto saved messages"
+		label	"[e] system presents a list of auto saved messages"
 		graphics
 		[
 			fill	"#000000"
 			targetArrow	"standard"
 		]
+		edgeAnchor
+		[
+			ySource	1.0
+			yTarget	-1.0
+		]
 		LabelGraphics
 		[
-			text	"[e] system present a list of auto saved messages"
+			text	"[e] system presents a list of auto saved messages"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	352.0
+			y	65.6494140625
 		]
 	]
 	edge
 	[
 		source	8
-		target	3
-		label	"[s] emailUser"
+		target	2
+		label	"[s] emailUser selects one message"
 		graphics
 		[
 			fill	"#000000"
 			targetArrow	"standard"
-		]
-		LabelGraphics
-		[
-			text	"[s] emailUser"
-			fontSize	12
-			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
-		]
-	]
-	edge
-	[
-		source	3
-		target	3
-		label	"[s] emailUser Click on the discard button"
-		graphics
-		[
-			fill	"#000000"
-			targetArrow	"standard"
-			Line
-			[
-				point
-				[
-					x	141.11108415658876
-					y	185.52010103735842
-				]
-				point
-				[
-					x	146.11108415658876
-					y	153.02010103735842
-				]
-				point
-				[
-					x	154.61108415658876
-					y	144.52010103735842
-				]
-				point
-				[
-					x	173.61108415658876
-					y	144.52010103735842
-				]
-				point
-				[
-					x	182.11108415658876
-					y	153.02010103735842
-				]
-				point
-				[
-					x	182.11108415658876
-					y	172.02010103735842
-				]
-				point
-				[
-					x	173.61108415658876
-					y	180.52010103735842
-				]
-				point
-				[
-					x	141.11108415658876
-					y	185.52010103735842
-				]
-			]
 		]
 		edgeAnchor
 		[
-			xSource	0.3333333333333333
-			ySource	-0.94375
-			xTarget	0.94375
-			yTarget	-0.3333333333333333
+			xSource	1.0
+			xTarget	-1.0
 		]
 		LabelGraphics
 		[
-			text	"[s] emailUser Click on the discard button"
+			text	"[s] emailUser selects one message"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
-		]
-	]
-	edge
-	[
-		source	3
-		target	3
-		label	"[s] emailUser fills out the fields and save the message"
-		graphics
-		[
-			fill	"#000000"
-			targetArrow	"standard"
-			Line
-			[
-				point
-				[
-					x	141.11108415658876
-					y	185.52010103735842
-				]
-				point
-				[
-					x	151.11108415658876
-					y	155.52010103735842
-				]
-				point
-				[
-					x	157.11108415658876
-					y	149.52010103735842
-				]
-				point
-				[
-					x	171.11108415658876
-					y	149.52010103735842
-				]
-				point
-				[
-					x	177.11108415658876
-					y	155.52010103735842
-				]
-				point
-				[
-					x	177.11108415658876
-					y	169.52010103735842
-				]
-				point
-				[
-					x	171.11108415658876
-					y	175.52010103735842
-				]
-				point
-				[
-					x	141.11108415658876
-					y	185.52010103735842
-				]
-			]
-		]
-		edgeAnchor
-		[
-			xSource	0.6666666666666666
-			ySource	-0.74375
-			xTarget	0.74375
-			yTarget	-0.6666666666666666
-		]
-		LabelGraphics
-		[
-			text	"[s] emailUser fills out the fields and save the message"
-			fontSize	12
-			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	404.9619140625
+			y	129.298828125
 		]
 	]
 	edge
 	[
 		source	3
 		target	9
-		label	"[s] emailUser fill out email field and click on the send button"
+		label	"[s] emailUser selects cancel button"
 		graphics
 		[
 			fill	"#000000"
 			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	650.0
+					y	875.0
+				]
+				point
+				[
+					x	644.4444444444445
+					y	350.0
+				]
+				point
+				[
+					x	325.0
+					y	350.0
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	-0.3703703703703695
+			ySource	-0.9270833333333334
+			xTarget	1.0
 		]
 		LabelGraphics
 		[
-			text	"[s] emailUser fill out email field and click on the send button"
+			text	"[s] emailUser selects cancel button"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	402.07769097222223
+			y	352.0
 		]
 	]
 	edge
 	[
 		source	9
 		target	6
-		label	"[e] system alerts empty content message"
+		label	"[e] system closes the email sending form"
 		graphics
 		[
 			fill	"#000000"
 			targetArrow	"standard"
 		]
+		edgeAnchor
+		[
+			ySource	1.0
+			yTarget	-1.0
+		]
 		LabelGraphics
 		[
-			text	"[e] system alerts empty content message"
+			text	"[e] system closes the email sending form"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	327.0
+			y	415.6494140625
 		]
 	]
 	edge
@@ -597,38 +567,132 @@ graph
 		[
 			fill	"#000000"
 			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	325.0
+					y	1025.0
+				]
+				point
+				[
+					x	329.1666666666667
+					y	800.0
+				]
+				point
+				[
+					x	641.6666666666666
+					y	800.0
+				]
+				point
+				[
+					x	650.0
+					y	875.0
+				]
+			]
 		]
 		edgeAnchor
 		[
-			ySource	-0.4176264790666816
-			yTarget	-0.4176264790666797
+			xSource	0.27777777777777907
+			ySource	-0.9604166666666667
+			xTarget	-0.5555555555555581
+			yTarget	-0.83125
 		]
 		LabelGraphics
 		[
 			text	"[e] system alerts that user does not exist"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	376.03483072916663
+			y	779.298828125
 		]
 	]
 	edge
 	[
 		source	4
 		target	3
-		label	"[e] system alerts that recipient field is empty, system asks to specify at least one recipient"
+		label	"[e] system alerts that recipient field is empty"
 		graphics
 		[
 			fill	"#000000"
 			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	325.0
+					y	1025.0
+				]
+				point
+				[
+					x	333.3333333333333
+					y	875.0
+				]
+				point
+				[
+					x	650.0
+					y	875.0
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	0.5555555555555542
+			ySource	-0.83125
+			xTarget	-1.0
 		]
 		LabelGraphics
 		[
-			text	"[e] system alerts that recipient field is empty, system asks to specify at least one recipient"
+			text	"[e] system alerts that recipient field is empty"
 			fontSize	12
 			fontName	"Dialog"
-			model	"six_pos"
-			position	"tail"
+			model	"side_slider"
+			x	361.22526041666663
+			y	854.298828125
+		]
+	]
+	edge
+	[
+		source	4
+		target	3
+		label	"[e] system alerts that message is empty"
+		graphics
+		[
+			fill	"#000000"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	325.0
+					y	1025.0
+				]
+				point
+				[
+					x	650.0
+					y	1025.0
+				]
+				point
+				[
+					x	650.0
+					y	875.0
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			yTarget	1.0
+		]
+		LabelGraphics
+		[
+			text	"[e] system alerts that message is empty"
+			fontSize	12
+			fontName	"Dialog"
+			model	"side_slider"
+			x	433.255859375
+			y	935.1829427083334
 		]
 	]
 ]
