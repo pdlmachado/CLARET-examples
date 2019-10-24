@@ -1,0 +1,66 @@
+/*
+ * This is an example claret specification
+ */
+systemName "ifood"
+
+usecase "Compra Cliente" {
+  version "0.1" type "Tutorial" user "Patrícia" date "22/10/2019"
+  actor cliente "Cliente"
+  
+  preCondition "Cliente está logado no ifood"
+  
+  
+  basic {
+    step 1 cliente "seleciona restaurante a partir da relação geral com todos os restaurantes abertos" af[1,2]
+    step 2 system "exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente"
+    step 3 cliente "adiciona na sacola itens do menu com as quantidades indicadas" af[3]
+    step 4 system "exibe a sacola com os itens e suas quantidades adicionados" ef [1]
+    step 5 cliente "solicita a finalização da compra"
+    step 6 system "exibe a página para pagamento" ef [2]
+    step 7 cliente "escolhe pagar com cartão de crédito" af[4]	
+  	step 8 system "solicita dados do cartão de crédito"
+  	step 9 cliente "fornece dados do cartão de crédito" 
+	step 10 system "solicita confirmação da compra" ef[3]
+    step 11 cliente "confirma a compra" af[5]
+    step 12 system "encaminha pedido ao restaurante"
+  }
+  
+	alternative 1 "Seleção do restaurante a partir da lista de favoritos" {
+		step 1 cliente "seleciona restaurante a partir da lista de seus restaurantes favoritos" bs 2 
+	}
+	
+	alternative 2 "Seleção do restaurante a partir da lista de últimos restaurantes onde comprou" {
+		step 1 cliente "seleciona restaurante a partir da lista dos últimos restaurantes onde comprou" bs 2
+	}
+   
+	alternative 3 "Seleção dos últimos itens comprados" {
+		step 1 cliente "adiciona a sacola os itens de uma compra anterior" bs 4
+  	}
+  	
+  	alternative 4 "Pagamento com dinheiro" {
+  		step 1 cliente "escolhe pagar em dinheiro" 
+    	step 2 system "solicita informação sobre a necessidade de troco"
+	    step 3 cliente "informa o troco necessário" bs 10 
+  	}
+  	
+	alternative 5 "Cancelamento da Compra" {
+  	  	step 1 cliente "cancela a compra"
+  		step 2 system "exibe tela com confirmação do cancelamento" 
+  	}
+  	
+  	exception 1 "Item do cardápio não disponível" {
+  		step 1 system "indica itens da sacola não disponíveis" bs 3
+  	}
+  
+  	exception 2 "Restaurante fechado" {
+  		step 1 system "indica que o restaurante encontra-se fechado" bs 1
+  	}
+
+	exception 3 "Pagamento não autorizado" {
+		step 1 system "informa que pagamento com o cartão não foi autorizado" bs 7
+	}
+	
+
+ 
+  postCondition "Compra registrada na lista de pedidos do cliente"
+}

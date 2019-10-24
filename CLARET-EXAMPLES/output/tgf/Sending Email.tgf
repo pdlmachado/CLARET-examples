@@ -1,0 +1,25 @@
+1 1
+2 2
+3 3
+4 4
+5 5
+6 6
+7 7
+8 8
+9 9
+10 10
+#
+1 2 [c] There is active network connection and user is logged in
+2 3 [s] Email User clicks the compose button
+3 4 [e] system presents a form with recipient, subject and text field and send and discard button
+4 5 [s] Email User fills out the fields and click on the send button
+5 6 [e] system informs that message was sent successfully
+6 7 [c] message is not held in the draft folder
+2 8 [s] Email User click on draft button
+8 9 [e] system presents a list of auto saved messages
+9 5 [s] Email User selects one message	
+4 10 [s] Email User selects cancel button
+10 7 [e] system closes the email sending form
+5 4 [e] system alerts that user does not exist
+5 4 [e] system alerts that recipient field is empty
+5 4 [e] system alerts that message is empty

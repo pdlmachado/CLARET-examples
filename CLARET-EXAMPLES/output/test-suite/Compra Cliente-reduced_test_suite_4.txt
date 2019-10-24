@@ -1,0 +1,749 @@
+/**
+ *	 >>> REDUCED TEST SUITE (Sim with Jaccard Index - Transition Pair Coverage) <<<
+ *
+ * - Calculated Maximum Test Case Size: 7
+ *
+ * - Equation:
+ *
+ *     maxTestCaseSize = (b + max(a, e))/2
+ * 
+ *     where:
+ *       b (Total of Basic Flow Steps): 12
+ *       a (Total of Steps from Greater Alternative Flow): 3
+ *       e (Total of Steps from Greater Exception Flow): 1
+ *
+ * - Total of Generated Test Cases: 72
+ */
+
+Test Case: 1
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 2
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 3
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 4
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 5
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 6
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 7
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 8
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 9
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 10
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 11
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 12
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 13
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 14
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 15
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 16
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 17
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 18
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 19
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 20
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 21
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 22
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 23
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 24
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 25
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 26
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 27
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 28
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 29
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 30
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 31
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 32
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 33
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 34
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 35
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 36
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 37
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 38
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 39
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 40
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 41
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 42
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 43
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 44
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 45
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 46
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 47
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 48
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 49
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 50
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 51
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 52
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 53
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 54
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 55
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 56
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 57
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 58
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 59
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 60
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 61
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 62
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 63
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 64
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 65
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 66
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 67
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 68
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 69
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 70
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+
+Test Case: 71
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona na sacola itens do menu com as quantidades indicadas -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar com cartão de crédito -> SYSTEM solicita dados do cartão de crédito
+Cliente fornece dados do cartão de crédito -> SYSTEM solicita confirmação da compra
+Cliente confirma a compra -> SYSTEM encaminha pedido ao restaurante
+Postcondition: Compra registrada na lista de pedidos do cliente
+
+Test Case: 72
+Precondition: Cliente está logado no ifood
+Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou -> SYSTEM exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM indica itens da sacola não disponíveis
+Cliente adiciona a sacola os itens de uma compra anterior -> SYSTEM exibe a sacola com os itens e suas quantidades adicionados
+Cliente solicita a finalização da compra -> SYSTEM exibe a página para pagamento
+Cliente escolhe pagar em dinheiro -> SYSTEM solicita informação sobre a necessidade de troco
+Cliente informa o troco necessário -> SYSTEM solicita confirmação da compra
+Cliente cancela a compra -> SYSTEM exibe tela com confirmação do cancelamento
+

@@ -1,0 +1,53 @@
+1 1
+2 2
+3 3
+4 4
+5 5
+6 6
+7 7
+8 8
+9 9
+10 10
+11 11
+12 12
+13 13
+14 14
+15 15
+16 16
+17 17
+18 18
+19 19
+20 20
+21 21
+22 22
+23 23
+24 24
+#
+1 11 conditions
+11 2 There is active network connection and user is logged in
+2 12 steps
+12 3 Email User clicks the compose button
+3 13 expected_results
+13 4 system presents a form with recipient, subject and text field and send and discard button
+4 14 steps
+14 5 Email User fills out the fields and click on the send button
+5 15 expected_results
+15 6 system informs that message was sent successfully
+6 16 conditions
+16 7 message is not held in the draft folder
+2 17 steps
+17 8 Email User click on draft button
+8 18 expected_results
+18 9 system presents a list of auto saved messages
+9 19 steps
+19 5 Email User selects one message	
+4 20 steps
+20 10 Email User selects cancel button
+10 21 expected_results
+21 7 system closes the email sending form
+5 22 expected_results
+22 4 system alerts that user does not exist
+5 23 expected_results
+23 4 system alerts that recipient field is empty
+5 24 expected_results
+24 4 system alerts that message is empty

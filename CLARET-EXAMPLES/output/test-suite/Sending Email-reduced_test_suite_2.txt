@@ -1,0 +1,1291 @@
+/**
+ *	 >>> REDUCED TEST SUITE (Greedy Heuristic - Transition Pair Coverage) <<<
+ *
+ * - Informed Maximum Test Case Size: 5
+ *
+ * - Total of Generated Test Cases: 159
+ */
+
+Test Case: 1
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 2
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 3
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 4
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 5
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 6
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 7
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 8
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 9
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 10
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 11
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 12
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 13
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 14
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 15
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 16
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 17
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 18
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 19
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 20
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 21
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 22
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 23
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 24
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 25
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 26
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 27
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 28
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 29
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 30
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 31
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 32
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 33
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 34
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 35
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 36
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 37
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 38
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 39
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 40
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 41
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 42
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 43
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 44
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 45
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 46
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 47
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 48
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 49
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 50
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 51
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 52
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 53
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 54
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 55
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 56
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 57
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 58
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 59
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 60
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 61
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 62
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 63
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 64
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 65
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 66
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 67
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 68
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 69
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 70
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 71
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 72
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 73
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 74
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 75
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 76
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 77
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 78
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 79
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 80
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 81
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 82
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 83
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 84
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 85
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 86
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 87
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 88
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 89
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 90
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 91
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 92
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 93
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 94
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 95
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 96
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 97
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 98
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 99
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 100
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 101
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 102
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 103
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 104
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 105
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 106
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 107
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 108
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 109
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 110
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 111
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 112
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 113
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 114
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 115
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 116
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 117
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 118
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 119
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 120
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 121
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 122
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 123
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 124
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 125
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 126
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 127
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 128
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 129
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 130
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 131
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 132
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 133
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 134
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 135
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 136
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 137
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 138
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 139
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 140
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 141
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 142
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 143
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 144
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 145
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 146
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 147
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 148
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 149
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 150
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 151
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 152
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 153
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 154
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 155
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 156
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 157
+Precondition: There is active network connection and user is logged in
+Email User click on draft button -> SYSTEM presents a list of auto saved messages
+Email User selects one message	 -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User selects cancel button -> SYSTEM closes the email sending form
+
+Test Case: 158
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM alerts that message is empty
+Email User fills out the fields and click on the send button -> SYSTEM alerts that user does not exist
+Email User fills out the fields and click on the send button -> SYSTEM alerts that recipient field is empty
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+
+Test Case: 159
+Precondition: There is active network connection and user is logged in
+Email User clicks the compose button -> SYSTEM presents a form with recipient, subject and text field and send and discard button
+Email User fills out the fields and click on the send button -> SYSTEM informs that message was sent successfully
+Postcondition: message is not held in the draft folder
+

@@ -1,0 +1,44 @@
+1 1
+2 2
+3 3
+4 4
+5 5
+6 6
+7 7
+8 8
+9 9
+10 10
+11 11
+12 12
+13 13
+14 14
+15 15
+16 16
+17 17
+18 18
+#
+1 2 [c] Cliente está logado no ifood
+2 3 [s] Cliente seleciona restaurante a partir da relação geral com todos os restaurantes abertos
+3 4 [e] system exibe a página com o menu disponível para o restaurante escolhido e os itens da última compra do cliente
+4 5 [s] Cliente adiciona na sacola itens do menu com as quantidades indicadas
+5 6 [e] system exibe a sacola com os itens e suas quantidades adicionados
+6 7 [s] Cliente solicita a finalização da compra
+7 8 [e] system exibe a página para pagamento
+8 9 [s] Cliente escolhe pagar com cartão de crédito
+9 10 [e] system solicita dados do cartão de crédito
+10 11 [s] Cliente fornece dados do cartão de crédito
+11 12 [e] system solicita confirmação da compra
+12 13 [s] Cliente confirma a compra
+13 14 [e] system encaminha pedido ao restaurante
+14 15 [c] Compra registrada na lista de pedidos do cliente
+2 3 [s] Cliente seleciona restaurante a partir da lista de seus restaurantes favoritos
+2 3 [s] Cliente seleciona restaurante a partir da lista dos últimos restaurantes onde comprou
+4 5 [s] Cliente adiciona a sacola os itens de uma compra anterior
+5 4 [e] system indica itens da sacola não disponíveis
+7 2 [e] system indica que o restaurante encontra-se fechado
+8 16 [s] Cliente escolhe pagar em dinheiro
+16 17 [e] system solicita informação sobre a necessidade de troco
+17 11 [s] Cliente informa o troco necessário
+11 8 [e] system informa que pagamento com o cartão não foi autorizado
+12 18 [s] Cliente cancela a compra
+18 15 [e] system exibe tela com confirmação do cancelamento
